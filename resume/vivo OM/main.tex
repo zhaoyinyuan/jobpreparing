@@ -1,0 +1,78 @@
+\documentclass[12pt]{test} 
+\usepackage{ctex}
+\usepackage{fontawesome}
+\setmainfont{SimSun}
+\newfontfamily{\FA}{FontAwesome.otf}
+\begin{document}
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	{{\HUGE{\textbf{\MakeUppercase{赵尹源}}}}}
+	\vspace{3pt}
+	
+	{申请职位：运维工程师} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.26\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\faMobilePhone   {  18636994018}\\
+	\faWeixin   {  zyy6993388}\\
+	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\faMailForward   {  \href{mailto:yyzhao@aliyun.com}{yyzhao@aliyun.com}}\\	
+	\faQq   {  527864230}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+\cvsect{工作技能}
+\begin{minipage}[t]{0.5\textwidth} % 40% of the page width for the introduction text
+% 	\vspace{-\baselineskip} % Required for vertically aligning minipages
+		\bubbles{6/LaTex,4/Office,3/HTML\quad,5/Markdown}	
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.6\textwidth} % 50% of the page for the skills bar chart
+\begin{barchart}{6.5}
+		\baritem{Python}{85}
+		\baritem{SQL}{65}
+		\baritem{Git}{80}
+		\baritem{Shell}{90}
+		\baritem{Java}{45}
+	\end{barchart}
+\end{minipage}
+\vspace{0.5cm}
+
+\cvsect{项目经历}
+
+\begin{entrylist}
+		\vspace{6pt}
+	\entry	{Geolocation}{云环境下的数据安全定位/验证}	{国家自然科学基金\\}{用Java 实现B/S 架构的云存储系统，服务器实时广播证明，分布式节点合作检测延迟\\		\texttt{密文数据} \slashsep\texttt{隐私保护} \slashsep\texttt{防止位置伪造} \slashsep\texttt{减少带宽开销} \slashsep\texttt{分布式}}
+		\vspace{6pt}
+	\entry		{Kubernetes}	{实验室计算机集群部署容器化应用kubernetes及维护}		{实验室内部平台\\}	{\texttt{apiserver} \slashsep\texttt{docker} \slashsep\texttt{kubelet} \slashsep\texttt{dashboard}}
+	\entry	{Blockchain}	{区块链安全性研究，各层结构漏洞和威胁}	{丛书出版中\\}		{\texttt{密码学与隐私保护} \slashsep\texttt{P2P与广播} \slashsep\texttt{51\%攻击} \slashsep\texttt{合约虚拟机} \slashsep\texttt{挖矿木马}}
+			\vspace{1pt}
+\end{entrylist}
+\cvsect{教育经历}
+\begin{entrylist}
+\entry{12.09-16.07}	{广州大学：数学与信息科学学院：信息安全}	{本科}{}
+\entry{17.09- 至今}{西安电子科技大学：网络空间安全：云数据安全--数据定位}{硕士}{}
+			\vspace{1pt}
+\end{entrylist}
+
+\cvsect{成果获奖}
+\begin{entrylist}
+\entry{13.09-17.09}{学校奖学金，普通话二级甲等，CET6，IELTS5.5...}{}{}
+\entry{17.09-18.09}{专业课成绩前10\%、一等奖学金、优秀研究生称号 }	{}{}
+\entry{18.04-18.06}{第四届“互联网+创新创业大赛”金奖}{}{}
+\entry{18.10-19.01}{ 研究生学术年会论文二等奖 }{}{}
+\end{entrylist}
+			\vspace{6pt}
+\begin{entrylist}
+\entry{论文,已发表}{\textbf{Zhao, Y.,} Yuan, H., Jiang, T., Chen, X., \href{https://doi.org/10.1016/j.jisa.2019.04.003} {Secure Distributed Data Geolocation Scheme Against Location Forgery Attack}, \emph{Journal of Information Security and Applications}, (CCF C类), (SCI)}{}{}
+\entry{论文,已录用}{Hua, M., \textbf{Zhao, Y.,} Jiang, T., Secure Data Deletion in Cloud Storage: A Survey,  \emph{International Journal of Embedded Systems}}{}{}
+\entry{专利,实审中}{姜涛，\textbf{赵尹源}，袁浩然，王一凡，基于完整性审计与通信时延的云数据安全定位方法}{}{}
+\end{entrylist}
+\end{document}
