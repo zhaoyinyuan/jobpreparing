@@ -2,7 +2,7 @@
 
 [简历准备](.\resume\readme.md)
 
-[Git](.\git\readme.md)
+[Git](.\git.md)
 
-[Shell](.\shell\readme.md)
+[Shell](.\shell.md)
 
