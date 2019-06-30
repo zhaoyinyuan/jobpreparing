@@ -30,6 +30,7 @@
 
 - [游戏测试开发工程师](https://job.bytedance.com/user/profile/)：杭州
 - 6.13 简历提交
+- 6.30 笔试
 
 #### 6.21：oppo
 
