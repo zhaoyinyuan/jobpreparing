@@ -1,0 +1,114 @@
+%# -*- coding:utf-8 -*-
+\documentclass[11.5pt,a4paper]{moderncv}
+\usepackage{fontspec,xunicode}
+\setmainfont{Tahoma}
+\usepackage[slantfont,boldfont]{xeCJK}
+
+\usepackage{xcolor}       
+\setmainfont{Times New Roman}%缺省英文字体.serif是有衬线字体sans serif无衬线字体
+\setCJKmainfont[ItalicFont={SimSun}, BoldFont={Microsoft YaHei}]{STSong}%衬线字体 缺省中文字体为
+\setCJKsansfont{STSong}
+\setCJKmonofont{STFangsong}%中文等宽字体
+%-----------------------xeCJK下设置中文字体------------------------------%
+\setCJKfamilyfont{song}{SimSun}                             %宋体 song
+\newcommand{\song}{\CJKfamily{song}}
+\setCJKfamilyfont{fs}{FangSong_GB2312}                      %仿宋2312 fs
+\newcommand{\fs}{\CJKfamily{fs}}
+\setCJKfamilyfont{yh}{Microsoft YaHei}                    %微软雅黑 yh
+\newcommand{\yh}{\CJKfamily{yh}}
+\setCJKfamilyfont{hei}{SimHei}                              %黑体  hei
+\newcommand{\hei}{\CJKfamily{hei}}
+\setCJKfamilyfont{hwxh}{STXihei}                                %华文细黑  hwxh
+\newcommand{\hwxh}{\CJKfamily{hwxh}}
+\setCJKfamilyfont{asong}{Adobe Song Std}                        %Adobe 宋体  asong
+\newcommand{\asong}{\CJKfamily{asong}}
+\setCJKfamilyfont{ahei}{Adobe Heiti Std}                            %Adobe 黑体  ahei
+\newcommand{\ahei}{\CJKfamily{ahei}}
+\setCJKfamilyfont{akai}{Adobe Kaiti Std}                            %Adobe 楷体  akai
+\newcommand{\akai}{\CJKfamily{akai}}
+
+
+%------------------------------设置字体大小------------------------%
+\newcommand{\chuhao}{\fontsize{42pt}{\baselineskip}\selectfont}     %初号
+\newcommand{\xiaochuhao}{\fontsize{36pt}{\baselineskip}\selectfont} %小初号
+\newcommand{\yihao}{\fontsize{28pt}{\baselineskip}\selectfont}      %一号
+\newcommand{\erhao}{\fontsize{21pt}{\baselineskip}\selectfont}      %二号
+\newcommand{\xiaoerhao}{\fontsize{18pt}{\baselineskip}\selectfont}  %小二号
+\newcommand{\sanhao}{\fontsize{15.75pt}{\baselineskip}\selectfont}  %三号
+\newcommand{\sihao}{\fontsize{14pt}{\baselineskip}\selectfont}         %四号
+\newcommand{\xiaosihao}{\fontsize{12pt}{\baselineskip}\selectfont}  %小四号
+\newcommand{\wuhao}{\fontsize{10.5pt}{\baselineskip}\selectfont}    %五号
+\newcommand{\subwuhao}{\fontsize{10pt}{\baselineskip}\selectfont}    %次五号
+\newcommand{\xiaowuhao}{\fontsize{9pt}{\baselineskip}\selectfont}   %小五号
+\newcommand{\liuhao}{\fontsize{7.875pt}{\baselineskip}\selectfont}  %六号
+\newcommand{\qihao}{\fontsize{5.25pt}{\baselineskip}\selectfont}    %七号
+
+
+%\usepackage{fontawesome}
+% \setCJKmainfont[BoldFont={WenQuanYi Micro Hei/Bold}]{WenQuanYi Micro Hei}
+%\defaultfontfeatures{Mapping=tex-text}
+%\XeTeXlinebreaklocale "zh"
+%\XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
+% moderncv themes
+\moderncvtheme[blue]{classic}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[green]{classic}                % idem
+%\moderncvtheme[blue,roman]{hht}
+% character encoding
+
+% adjust the page margins
+\usepackage[scale=0.9]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}						% if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths}                     % required when changes are made to page layout lengths
+
+% personal data
+\firstname{赵尹源}
+\familyname{}
+\title{Yinyuan Zhao}   
+\address{1994/04/25}{}    % optional, remove the line if not wanted
+\mobile{18636994018}                    % optional, remove the line if not wanted
+\email{yyzhao@aliyun.com}                     % optional, remove the line if not wanted
+%\homepage{Blog: http://geekplux.com} % optional, remove the line if not wanted
+%\social[github]{GitHub: https://github.com/geekplux}
+\extrainfo{%
+%  LinkedIn: https://cn.linkedin.com/in/xxx \\
+  WeChat: zyy6993388 \\
+  QQ: 527864230}
+\photo[64pt]{avatar.jpg}                       % '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+
+\begin{document}
+\maketitle
+\vspace*{-15mm}
+
+\section{教育经历}
+\cventry{12.09-16.07}{本科}{广州大学}{信息安全}{}{}         % arguments 3 to 6 are optional
+\cventry{17.09- 至今}{硕士}{西安电子科技大学}{网络空间安全}{云数据安全--数据定位}{}    
+\section{项目经历}
+\cvline{Geolocation}{云环境下的数据安全定位/验证，解决用户数据所有权和管理权分离问题}
+\cvline{ }{算法设计与实现，国家自然科学基金（论文+专利）}
+\cvline{ }{密文数据；隐私保护；防止位置伪造；减少带宽开销；分布式}
+\cvline{ }{实现一个B/S 架构的云存储系统，服务器实时广播证明，分布式节点合作检测延迟}
+\cvline{Blockchain}{区块链安全性研究，梳理调研区块链各层结构漏洞和威胁}
+\cvline{}{密码学与隐私保护、P2P与广播、51\%攻击、合约虚拟机、挖矿木马......}
+\section{证书获奖}
+\cvline{13.09-17.09}{ 学校奖学金，普通话二级甲等，CET6...}
+\cvline{17.09-18.09}{ 专业课成绩前10\%、一等奖学金、优秀研究生称号 }    
+\cvline{18.04-18.06}{ 第四届“互联网+创新创业大赛”金奖：基于区块链支持模糊去重的完整性审计系统}
+\cvline{}{数据加密+重复数据删除+数据完整性验证+区块链智能合约}      
+\cvline{18.10-19.01}{ 研究生学术年会论文二等奖 }
+\section{工作技能}
+\cvline{基础}{无障碍阅读英文；密码学基础；云存储安全；区块链基础；实现论文方案的能力}
+\cvline{}{熟练使用排版工具Office、Markdown、LaTex}
+\cvline{网络}{网络原理和安全，熟悉HTTP(S)、TCP/IP}
+\cvline{开发}{熟悉常用的命令行工具，熟练掌握Shell、Python、C语言编程}
+\section{科研成果}
+\cvline{论文,已发表}{\textbf{Zhao, Y.,} Yuan, H., Jiang, T., Chen, X., \href{https://doi.org/10.1016/j.jisa.2019.04.003} {Secure Distributed Data Geolocation Scheme Against Location Forgery Attack}, \emph{Journal of Information Security and Applications}(SCI)}
+\cvline{论文,已录用}{Hua, M., \textbf{Zhao, Y.,} Jiang, T., Secure Data Deletion in Cloud Storage: A Survey,  \emph{International Journal of Embedded Systems}(CCF C类)}
+\cvline{专利,实审中}{姜涛，\textbf{赵尹源}，袁浩然，王一凡，基于完整性审计与通信时延的云数据安全定位方法}
+\section{自我评价}
+\cvline{技术}{熟练使用Python语言进行开发，应用所学知识，有良好的设计思路}
+\cvline{}{密码学，安全背景，基础知识}
+\cvline{性格}{学习能力强，有责任心，善于沟通交流}
+\cvline{}{适应能力强，持之以恒（扇贝单词无间断打卡1200+天）}
+\cvline{兴趣}{球类运动、贴吧吧主管理、游戏战队...}
+\end{document}
